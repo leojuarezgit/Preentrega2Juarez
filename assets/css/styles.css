@@ -1,3 +1,10 @@
 body {
     background-color: aqua;
 }
+
+
+
+.navbar navbar-expand-lg bg-body-tertiary{
+
+    background-color: aqua;
+}
