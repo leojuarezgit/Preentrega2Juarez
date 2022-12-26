@@ -1,10 +1,56 @@
-body {
-    background-color: aqua;
+* {
+    background-color: #0d3b55;
+    color:aliceblue;
+    padding: 0;
+    margin: 0;
 }
 
 
+li .nav-item .nav-link {
 
-.navbar navbar-expand-lg bg-body-tertiary{
+    color: aliceblue
+}
 
-    background-color: aqua;
+#contenedor {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 4fr 4fr 1fr 1fr;
+    grid-template-areas:
+
+        "slogan slogan"
+        "texto--explicativo video"
+        "icono--izq icono--der"
+        "footer footer"
+
+    ;
+}
+
+.slogan{
+    grid-area: slogan;
+}
+
+.texto--explicativo{
+    grid-area: texto--explicativo;
+}
+
+.video{
+    grid-area: video;
+}
+
+.icono--izq{
+    grid-area: icono--izq;
+}
+
+.icono-der{
+    grid-area: icono--der;
+}
+
+.footer{
+
+    grid-area: footer;
+}
+
+.navbar-toggler{
+
+    background-color: #a8cfe5;
 }
