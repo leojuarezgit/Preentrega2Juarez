@@ -2,39 +2,114 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Subiza</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Subiza</title>
 </head>
 
-<body>
-    <!-- navbar bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="assets/img/SUBIZA-LOGO.png" alt="Logo" width="200" height="100" class="d-inline-block align-text-top"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Quienes somos?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Guardia Telefónica</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Seguimiento de Pacientes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Contacto</a>
-              </li>
-            </ul>
+<body class="bg-secondary">
+  1
+  <!-- navbar bootstrap -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/SUBIZA-LOGO.png" alt="Logo" width="200"
+          height="100" class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler bg-body-secondary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-body-secondary"></span>
+      </button>
+      <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Quienes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Guardia Telefónica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Seguimiento de Pacientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white link-secondary" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <!-- en main "principal" pongo img de fondo -->
+<main id="principal"> 
+
+  <div id="contenedor--contacto">
+
+    <div class="cards--contacto">
+
+        <div class ="card bg-secondary">
+          <p class="titulo">Teléfono</p>
+          <p class="dato">+54 11 465255558</p>
         </div>
-    </nav>
+
+        <div class ="card bg-secondary">
+          <p p class="titulo">Correo electrónico</p>
+          <p class="dato">contacto@subiza.com.ar</p>
+        </div>
+
+        <div class ="card bg-secondary">
+          <p class="titulo">Nuestras redes sociales</p>
+          <div class="redes">
+          <img src="assets/img/facebook.png" width="30" height="30"> <img src="assets/img/instagram.png" width="30" height="30"> <img src="assets/img/twitter.png" width="30" height="30">
+          </div>
+        </div>
 
 
+
+    </div>
+
+    <div class="formulario">
+      <h1 id="cabecera--contacto">Contacto: </h1>
+      <form id="contacto">
+          <label for="Nombre_Apellido">Nombre y apellido:</label><br>
+          <input type="text" id="Nombre_apellido">
+          <br>
+          <label for="telefono">Telefono:</label><br>
+          <input type="number" id="telefono">
+          <br>
+          <label for="email">Correo Electrónico:</label>
+          <br>
+          <input type="email" id="email">
+          <br>
+          <label for="consulta">Consulta:</label><br>
+
+          <textarea id="consulta"></textarea>
+          <br>
+          <button id="enviar">Enviar</button>
+      </form>
+    </div>
+
+
+  </main>
+    <div class="footer">
+      Superintendencia de Servicios de Salud<br>
+      Organo Control de Obras Sociales<br>entidades de Medicina Prepaga
+      0800-222-SALUD (72583) <br>www.sssalud.gob.ar<br>RNEMP Nº 1332
+    </div>
+
+
+  </div>
+</main>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
